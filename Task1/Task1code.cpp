@@ -36,20 +36,19 @@ void encodeOneStep(const char* filename, const unsigned char* image, unsigned wi
 
 unsigned char* downsize(unsigned char* image) {
 
-	unsigned char *testi = (unsigned char*)malloc((2940 * 2016 * 4) * sizeof(unsigned char));
+	unsigned char* testi = (unsigned char*)malloc((735 * 504 * 4) * sizeof(unsigned char));
 
-	for (int h = 0, h1 = 0, height = 0; h <= 2016; h = h + 4, h1++) {
-		height = h * 2016;
-		for (int w = 0, w1 = 0; w <= 2490; w = w + 16, w1++) {
-			testi[(h1 * 504) + w1 + 0] = image[height + w + 0];
-			testi[(h1 * 504) + w1 + 1] = image[height + w + 1];
-			testi[(h1 * 504) + w1 + 2] = image[height + w + 2];
-			testi[(h1 * 504) + w1 + 3] = image[height + w + 3];
-		}
+
+	for (int h = 0, h1 = 0; h1 < 2017; h++, h1 = h1 + 4) {
+			for (int w = 0, w1 = 0; w1 < 2929; w1 = w1 + 16, w = w + 4) {
+
+				testi[(h * 504) + w + 0] = image[h1 * 2016 + w1 + 0];
+				testi[(h * 504) + w + 1] = image[h1 * 2016 + w1 + 1];
+				testi[(h * 504) + w + 2] = image[h1 * 2016 + w1 + 2];
+				testi[(h * 504) + w + 3] = image[h1 * 2016 + w1 + 3];
+			}
+			
 	}
-
-
-
 	return testi;
 }
 
@@ -63,13 +62,21 @@ void main() {
 	
 
 	image3 = downsize(image2);
-	lodepng_encode32_file("test2.png", image3, 2940, 2016);
-	std::cout << int(image2[0]);
-	std::cout << int(image2[1]) << std::endl;
+	
 
-	std::cout << int(image3[0]);
-	std::cout << int(image3[1]);
 
+	for (int i = 0; i < 4; i++) {
+		std::cout << int(image2[i]) << std::endl;
+	}
+	std::cout << int(23423432424) << std::endl;
+	for (int i = 0; i < 4; i++) {
+		std::cout << int(image3[i]) << std::endl;
+	}
+	std::cout << int(image3[370440]) << std::endl;
+
+
+
+	lodepng_encode32_file("test2.png", image3, 735, 504);
 
 
 	
