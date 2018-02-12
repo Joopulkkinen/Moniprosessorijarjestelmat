@@ -1,0 +1,13 @@
+﻿  Task1code.cpp
+c:\users\puxu\source\repos\task1\task1\files\lodepng.cpp(798): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+c:\users\puxu\source\repos\task1\task1\files\lodepng.cpp(1458): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\users\puxu\source\repos\task1\task1\files\lodepng.cpp(1462): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\users\puxu\source\repos\task1\task1\files\lodepng.cpp(1534): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+c:\users\puxu\source\repos\task1\task1\files\lodepng.cpp(3479): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+c:\users\puxu\source\repos\task1\task1\files\lodepng.cpp(3493): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+c:\users\puxu\source\repos\task1\task1\files\lodepng.cpp(4334): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+c:\users\puxu\source\repos\task1\task1\files\lodepng.cpp(4382): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+c:\users\puxu\source\repos\task1\task1\files\lodepng.cpp(4462): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+c:\users\puxu\source\repos\task1\task1\files\lodepng.cpp(5418): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+c:\users\puxu\source\repos\task1\task1\task1code.cpp(56): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Task1.vcxproj -> C:\Users\Puxu\source\repos\Task1\x64\Debug\Task1.exe
